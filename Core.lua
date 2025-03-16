@@ -1,4 +1,4 @@
-local DF = LibStub('AceAddon-3.0'):NewAddon('cDF', 'AceConsole-3.0')
+local DF = LibStub('AceAddon-3.0'):NewAddon('legionDF', 'AceConsole-3.0')
 local db
 
 -- DF.InterfaceVersion = select(4, GetBuildInfo())

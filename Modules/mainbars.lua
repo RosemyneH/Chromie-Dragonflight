@@ -1,6 +1,6 @@
 local addon = select(2,...);
 local config = addon.config;
-addon.dir = [[Interface\AddOns\cDF\assets\]]
+addon.dir = [[Interface\AddOns\legionDF\assets\]]
 local event = addon.package;
 local do_action = addon.functions;
 local select = select;

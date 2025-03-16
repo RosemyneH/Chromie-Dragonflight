@@ -1,4 +1,4 @@
-local DF = LibStub('AceAddon-3.0'):GetAddon('cDF')
+local DF = LibStub('AceAddon-3.0'):GetAddon('legionDF')
 local mName = 'Chat'
 local Module = DF:NewModule(mName, 'AceConsole-3.0')
 
@@ -37,7 +37,7 @@ end
 
 local options = {
     type = 'group',
-    name = 'cDF - ' .. mName,
+    name = 'legionDF - ' .. mName,
     get = getOption,
     set = setOption,
     args = {

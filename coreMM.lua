@@ -1,4 +1,4 @@
-local DF = LibStub('AceAddon-3.0'):GetAddon('cDF')
+local DF = LibStub('AceAddon-3.0'):GetAddon('legionDF')
 local config = DF.config
 local unpack = unpack
 local select = select

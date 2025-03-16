@@ -1,8 +1,8 @@
-## Interface: 30300
-## Title: Chromie |cff1974d2Dragonflight
-## Author: Youtube/@TheLinuxITGuy
-## Notes: The Dragonflight UI for Chromie Craft.
-## Version: GIT
+## Interface: 70300
+## Title: Legion |cff1974d2Dragonflight|r
+## Author: Youtube/@TheLinuxITGuy, Rosemyne
+## Notes: The Dragonflight UI for Legion.
+## Version: 1
 ## DefaultState: enabled
 ## SavedVariables: DragonflightUIDB
 ## SavedVariablesPerCharacter: SOCD

@@ -1,4 +1,4 @@
-local DF = LibStub('AceAddon-3.0'):GetAddon('cDF')
+local DF = LibStub('AceAddon-3.0'):GetAddon('legionDF')
 local mName = '*Prototype*'
 local Module = DF:NewModule(mName, 'AceConsole-3.0')
 
@@ -16,7 +16,7 @@ local defaults = {
 
 local options = {
     type = 'group',
-    name = 'cDF - ' .. mName,
+    name = 'legionDF - ' .. mName,
     args = {
         toggle = {
             type = 'toggle',

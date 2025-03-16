@@ -268,7 +268,7 @@ local function subWithDots(str, maxLen)
     return utf8sub(str, 1, maxLen) .. "..."
 end
 
-local DF = LibStub('AceAddon-3.0'):GetAddon('cDF')
+local DF = LibStub('AceAddon-3.0'):GetAddon('legionDF')
 local mName = 'Castbar'
 local Module = DF:NewModule(mName, 'AceConsole-3.0')
 
@@ -310,7 +310,7 @@ end
 
 local options = {
     type = 'group',
-    name = 'cDF - ' .. mName,
+    name = 'legionDF - ' .. mName,
     get = getOption,
     set = setOption,
     args = {
@@ -443,10 +443,10 @@ function Module.ChangeDefaultCastbar()
 end
 
 function Module.CreateNewCastbar()
-    local standardRef = 'Interface\\AddOns\\cDF\\Textures\\Castbar\\CastingBarStandard2'
-    local borderRef = 'Interface\\AddOns\\cDF\\Textures\\Castbar\\CastingBarFrame2'
-    local backgroundRef = 'Interface\\AddOns\\cDF\\Textures\\Castbar\\CastingBarBackground2'
-    local sparkRef = 'Interface\\AddOns\\cDF\\Textures\\Castbar\\CastingBarSpark'
+    local standardRef = 'Interface\\AddOns\\legionDF\\Textures\\Castbar\\CastingBarStandard2'
+    local borderRef = 'Interface\\AddOns\\legionDF\\Textures\\Castbar\\CastingBarFrame2'
+    local backgroundRef = 'Interface\\AddOns\\legionDF\\Textures\\Castbar\\CastingBarBackground2'
+    local sparkRef = 'Interface\\AddOns\\legionDF\\Textures\\Castbar\\CastingBarSpark'
 
     local sizeX = 250
     local sizeY = 15
@@ -516,7 +516,7 @@ function Module.CreateNewCastbar()
 
     local bgTex = bg:CreateTexture('ImprovedUICastbarNameBackground', 'ARTWORK')
     bgTex:ClearAllPoints()
-    bgTex:SetTexture('Interface\\AddOns\\cDF\\Textures\\MinimapBorder')
+    bgTex:SetTexture('Interface\\AddOns\\legionDF\\Textures\\MinimapBorder')
     bgTex:SetSize(sizeX, 30)
     bgTex:SetPoint('TOP', f, 'BOTTOM', 2, 2)
 
@@ -582,7 +582,7 @@ function Module.CreateNewCastbar()
 end
 
 function Module.SetBarNormal()
-    local standardRef = 'Interface\\AddOns\\cDF\\Textures\\Castbar\\CastingBarStandard2'
+    local standardRef = 'Interface\\AddOns\\legionDF\\Textures\\Castbar\\CastingBarStandard2'
     frame.Castbar.Bar:SetStatusBarTexture(standardRef)
 
     frame.Castbar.bChanneling = false
@@ -629,7 +629,7 @@ function Module.HideAllTicks()
 end
 
 function Module.SetBarChannel()
-    local channelRef = 'Interface\\AddOns\\cDF\\Textures\\Castbar\\CastingBarChannel'
+    local channelRef = 'Interface\\AddOns\\legionDF\\Textures\\Castbar\\CastingBarChannel'
     frame.Castbar.Bar:SetStatusBarTexture(channelRef)
 
     frame.Castbar.bChanneling = true
@@ -657,7 +657,7 @@ function Module.SetBarChannel()
 end
 
 function Module.SetBarInterrupted()
-    local interruptedRef = 'Interface\\AddOns\\cDF\\Textures\\Castbar\\CastingBarInterrupted2'
+    local interruptedRef = 'Interface\\AddOns\\legionDF\\Textures\\Castbar\\CastingBarInterrupted2'
     frame.Castbar.Bar:SetStatusBarTexture(interruptedRef)
 
     frame.Castbar.Text:SetText('Interrupted')
